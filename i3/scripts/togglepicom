@@ -1,0 +1,13 @@
+#!/bin/sh
+
+TOGGLE=$HOME/.config/i3/.toggle
+
+if [ ! -e $TOGGLE ]; then
+    notify-send PICOM "Compositor killed succesfully"
+    touch $TOGGLE
+    pkill picom
+else
+    rm $TOGGLE
+    picom -bf --experimental-backends
+    notify-send PICOM "Compositor already up"
+fi
