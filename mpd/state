@@ -1,8 +1,8 @@
-sw_volume: 98
+sw_volume: 100
 audio_device_state:1:default detected output
-state: play
-current: 46
-time: 5249.652000
+state: pause
+current: 49
+time: 221.867000
 random: 0
 repeat: 0
 single: 0
@@ -18,71 +18,85 @@ playlist_begin
 4:Evangelion/The End Of Evangelion - Komm Süsser Tod (오라, 달콤한 죽음이여 한글번역).mp3
 5:Evangelion/Tsubasa wo Kudasai _Sub Español_ Evangelion 2.22 You can (not) advance.mp3
 6:Evangelion/Evangelion 3 You can (Not) redo (Ending Song).mp3
-7:Record/FM/FR0001.WAV
-8:Record/Voice/VR0001.WAV
-9:Record/Voice/VR0002.WAV
-10:Record/Voice/VR0003.WAV
-11:Record/Voice/VR0004.WAV
-12:Record/Voice/VR0005.WAV
-13:Record/Voice/VR0006.WAV
-14:Record/Voice/VR0007.WAV
-15:tempus/Definitely NOT a stick bug meme_(MP3_160K).mp3
-16:tempus/DisSolve - different story w_2delegy(MP3_160K).mp3
-17:tempus/goreshit - toromi hearts 2(MP3_160K).mp3
-18:tempus/Lethaeus _ Silentroom  _  Arcaea _ Lanota(MP3_160K).mp3
-19:tempus/Protoflicker (Full version) _ Silentroom  _  Rainbow Frontier (2019)(MP3_160K).mp3
-20:tempus/PSYQUI - ヒステリックナイトガール feat. Such (android52 Edit)(MP3_160K).mp3
-21:tempus/Ragnarok(MP3_160K).mp3
-22:tempus/Skyclad no Kansokusha - Kanako Itō - Steins_Gate_ 2° Ending(MP3_160K).mp3
-23:tempus/Vitamins--Mili feat. World_s end girlfriend [Millennium Mother](MP3_160K).mp3
-24:tempus/Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version(MP3_160K).mp3
-25:tempus/美波「カワキヲアメク」MV(MP3_160K).mp3
-26:[Synthesia] Toradora OST - Lost my pieces (Piano) [Toradora].mp3
-27:【C94 Electronica】 Nhato - Dear Eternity [Phant 3].mp3
-28:audio.mp3
-29:C94 ElectronicaTrance Taishi - Unterhimmel [Phant 3].mp3
-30:Camelia - Circle of the death.mp3
-31:Clairo - Sofia (Slowed to Perfection).mp3
-32:Creo - Carnivores.mp3
-33:Data & Picard.mp3
-34:Drakengard 3 - Kuroi Uta (Romaji Lyrics).mp3
-35:EXILE.mp3
-36:Gate.mp3
-37:Goodbye Moonmen   The Living Tombstone BTFH Lyric Video.mp3
-38:Guilty Crown - Departures  Blessing (Full Vesrion).mp3
-39:Helblinde - This Silence is Mine.mp3
-40:hosurus.mp3
-41:Keiichi Okabe - Prelude Of Showdown.mp3
-42:Last Stand (Mabinogi).mp3
-43:Marsy - She Loves Me.mp3
-44:Neon Genesis Evangelion  FLY ME TO THE MOON  CLAIRE (ED, Ending, Full, NGE, OST, Soundtrack).mp3
-45:NieR -Automata - Voice Of No Return_還ラナイ声(Lyrics).mp3
-46:NieR Replicant & Automata Music Mix Study_Work (Most Beautiful and Emotional NieR Compilation) 2020.mp3
-47:pureruby.mp3
-48:Sakuyui - Yoru ni Kakeru (Yugu) [You].mp3
-49:Silentroom - Nhelv.mp3
-50:SOOOO - Happppy song.mp3
-51:Spirited Away 2001 - The Name of Life Instrumental Piano Inochi No Namae.mp3
-52:tashialgo.mp3
-53:YOASOBIハルジオンOfficial Music Video.mp3
-54:YOASOBI怪物Official Music Video　(YOASOBI - Monster).mp3
-55:YOASOBI群青Official Music Video.mp3
-56:オリジナルdive (リリックビデオ) by miu.mp3
-57:図鑑.mp3
-58:Sakuzyo (削除) - I am 'End' (Album - AngelFalse).mp3
-59:Infected Mushroom - The Pretender.mp3
-60:Mecano - Laika (Homenaje).mp3
-61:Taishi - Encounter Like A Rendezvous (In Another World) (Compllege - Somewhere Not in This World).mp3
-62:Sofia.mp3
-63:02-infected_mushroom_-_saeed-upe.mp3
-64:Lost Memory.mp3
-65:WiNGY - One and Only (feat. liightflower).mp3
-66:WiNGY- One and Only (ft. liightflower) (slowed + reverb).mp3
-67:Taishi - chapter2 The First Velocity (Compllege - Phant 2).mp3
-68:Independent Puppet.mp3
-69:Send Me an Angel(MP3_160K).mp3
-70:Seiryu - Age de la Lune.mp3
-71:Infected Mushroom - Becoming Insane (Full Version).mp3
-72:KillerBlood - 來世 (FUTURE WORLD) -FULL ALBUM MIX-.mp3
-73:Fairys Tears (Remastered Version).mp3
+7:midis/bach_846.mid
+8:midis/bach_847.mid
+9:midis/bach_850.mid
+10:Record/FM/FR0001.WAV
+11:Record/Voice/VR0001.WAV
+12:Record/Voice/VR0002.WAV
+13:Record/Voice/VR0003.WAV
+14:Record/Voice/VR0004.WAV
+15:Record/Voice/VR0005.WAV
+16:Record/Voice/VR0006.WAV
+17:Record/Voice/VR0007.WAV
+18:tempus/Definitely NOT a stick bug meme_(MP3_160K).mp3
+19:tempus/DisSolve - different story w_2delegy(MP3_160K).mp3
+20:tempus/goreshit - toromi hearts 2(MP3_160K).mp3
+21:tempus/Lethaeus _ Silentroom  _  Arcaea _ Lanota(MP3_160K).mp3
+22:tempus/Protoflicker (Full version) _ Silentroom  _  Rainbow Frontier (2019)(MP3_160K).mp3
+23:tempus/PSYQUI - ヒステリックナイトガール feat. Such (android52 Edit)(MP3_160K).mp3
+24:tempus/Ragnarok(MP3_160K).mp3
+25:tempus/Skyclad no Kansokusha - Kanako Itō - Steins_Gate_ 2° Ending(MP3_160K).mp3
+26:tempus/Vitamins--Mili feat. World_s end girlfriend [Millennium Mother](MP3_160K).mp3
+27:tempus/Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version(MP3_160K).mp3
+28:tempus/美波「カワキヲアメク」MV(MP3_160K).mp3
+29:[Official] Celeste Original Soundtrack - 03 - Resurrections.mp3
+30:[Synthesia] Toradora OST - Lost my pieces (Piano) [Toradora].mp3
+31:【C94 Electronica】 Nhato - Dear Eternity [Phant 3].mp3
+32:Ascension to Heaven.mp3
+33:C94 ElectronicaTrance Taishi - Unterhimmel [Phant 3].mp3
+34:Camelia - Circle of the death.mp3
+35:Clairo - Sofia (Slowed to Perfection).mp3
+36:Come inuyasha.mp3
+37:Creo - Carnivores.mp3
+38:Creo - Dark Tides.mp3
+39:Data & Picard.mp3
+40:Drakengard 3 - Kuroi Uta (Romaji Lyrics).mp3
+41:EXILE.mp3
+42:Fairys Tears (Remastered Version).mp3
+43:FINAL STAND  POWER OF EPIC MUSIC - Powerful Battle Orchestral Music Mix - Atom Music Audio.mp3
+44:Gods of the Artificial.mp3
+45:Goodbye Moonmen   The Living Tombstone BTFH Lyric Video.mp3
+46:Guilty Crown - Departures  Blessing (Full Vesrion).mp3
+47:Helblinde - This Silence is Mine.mp3
+48:hosurus.mp3
+49:Keiichi Okabe - Prelude Of Showdown.mp3
+50:Last Stand (Mabinogi).mp3
+51:Little Busters _Refrain_ OST - No Title Playing a Capriccio to Awaken Ones Love.mp3
+52:Marsy - She Loves Me.mp3
+53:Neon Genesis Evangelion  FLY ME TO THE MOON  CLAIRE (ED, Ending, Full, NGE, OST, Soundtrack).mp3
+54:NieR -Automata - Voice Of No Return_還ラナイ声(Lyrics).mp3
+55:NieR Replicant & Automata Music Mix Study_Work (Most Beautiful and Emotional NieR Compilation) 2020.mp3
+56:pureruby.mp3
+57:Rav - YOU FUCKERS WERE ASKING FOR THIS ONE (prod. Ljones).mp3
+58:Sakuyui - Yoru ni Kakeru (Yugu) [You].mp3
+59:Silentroom - Nhelv.mp3
+60:SOOOO - Happppy song.mp3
+61:Spirited Away 2001 - The Name of Life Instrumental Piano Inochi No Namae.mp3
+62:tashialgo.mp3
+63:y2mate.com - Never Make It.mp3
+64:YOASOBIハルジオンOfficial Music Video.mp3
+65:YOASOBI怪物Official Music Video　(YOASOBI - Monster).mp3
+66:YOASOBI群青Official Music Video.mp3
+67:オリジナルdive (リリックビデオ) by miu.mp3
+68:図鑑.mp3
+69:Sakuzyo (削除) - I am 'End' (Album - AngelFalse).mp3
+70:Infected Mushroom - The Pretender.mp3
+71:Mecano - Laika (Homenaje).mp3
+72:Taishi - Encounter Like A Rendezvous (In Another World) (Compllege - Somewhere Not in This World).mp3
+73:Take A Slice.mp3
+74:Sofia.mp3
+75:02-infected_mushroom_-_saeed-upe.mp3
+76:Lost Memory.mp3
+77:WiNGY - One and Only (feat. liightflower).mp3
+78:WiNGY- One and Only (ft. liightflower) (slowed + reverb).mp3
+79:Shiver.mp3
+80:Taishi - chapter2 The First Velocity (Compllege - Phant 2).mp3
+81:Independent Puppet.mp3
+82:Send Me an Angel(MP3_160K).mp3
+83:Seiryu - Age de la Lune.mp3
+84:Amoeba.mp3
+85:Gilbert OSullivan - Alone Again Naturally [HQ - FLAC].mp3
+86:Infected Mushroom - Becoming Insane (Full Version).mp3
+87:KillerBlood - 來世 (FUTURE WORLD) -FULL ALBUM MIX-.mp3
 playlist_end

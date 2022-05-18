@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+FILE=~/.config/i3/scripts/.bk_num
+SCRIPT=~/.config/i3/scripts/background
+
+if [ ! -e $FILE ]; then
+  touch $FILE
+  echo 1 > $FILE
+fi
+
+read NUM < $FILE
+echo $NUM
+((NUM+=1))
+
+echo $NUM > $FILE
+
+exec $SCRIPT

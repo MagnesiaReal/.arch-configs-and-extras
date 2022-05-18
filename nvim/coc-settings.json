@@ -1,8 +1,7 @@
 {
-  "java.saveActions.organizeImports": true,
-  "java.referencesCodeLens.enabled": true,
-  
-    
+  "java.implementationsCodeLens.enabled": true,
+  "java.format.settings.url": "/home/magneciareal/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+
   "codeLens.enable": true,
 
   "languageserver": {
@@ -15,22 +14,22 @@
     "ccls": {
       "command": "ccls",
       "filetypes": [
-	"c",
-	"cpp",
-	"objc",
-	"objcpp"
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
       ],
       "rootPatterns": [
-	".ccls",
-	"compile_commands.json",
-	".vim/",
-	".git/",
-	".hg/"
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
       ],
       "initializationOptions": {
-	"cache": {
-	  "directory": "/tmp/ccls"
-	}
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
       }
     }
   },

@@ -1,0 +1,136 @@
+#!/bin/zsh
+
+FILE=~/.config/i3/scripts/.bk_num
+
+if [ ! -e $FILE ]; then
+  touch $FILE
+  echo 1 > $FILE
+fi
+read NUM < $FILE
+
+[ $NUM -gt 41 ] && NUM=1 && echo $NUM > $FILE
+
+notify-send Wallpapers "Selection $NUM"
+
+case $NUM in
+  1)
+    feh --bg-fill ~/Pictures/Wallpapers/__littorio_and_littorio_azur_lane_drawn_by_shiro_kanae__3946cb98a24292111484c8d573676d51.jpg --bg-fill ~/Pictures/Wallpapers/09b2f073dcb017ad13fed378078afa98.jpg
+  ;;
+  2)
+    feh --bg-fill ~/Pictures/Wallpapers/86bf9f685ae40997300a0f2f24139ba4.png --bg-fill ~/Pictures/Wallpapers/85439386_p0.png
+  ;;
+  3)
+    feh --bg-fill ~/Pictures/Wallpapers/267efed265220a1a944596794a6cf7a0.png --bg-fill ~/Pictures/Wallpapers/94162076_p0.png
+  ;;
+  4)
+    feh --bg-fill ~/Pictures/Wallpapers/coven-leblanc-splash-art-uhdpaper.com-hd-7.1596.jpg --bg-fill ~/Pictures/Wallpapers/dawnbringer-morgana-skin-lol-splash-art-2k-wallpaper-2560x1440-uhdpaper.com-667.1_b.jpg
+  ;;
+  5)
+    feh --bg-fill ~/Pictures/Wallpapers/Lux-porcelana.jpg --bg-fill ~/Pictures/Wallpapers/Kindre-de-porcelana.jpg
+  ;;
+  6)
+    feh --bg-fill ~/Pictures/Wallpapers/95485120_p0.jpg --bg-fill ~/Pictures/Wallpapers/eca08da8c03ee633a59540ad9ffca986.png
+  ;;
+  7)
+    feh --bg-fill ~/Pictures/Wallpapers/22626c90ce960962de93c9f36da1a653.jpg --bg-fill ~/Pictures/Wallpapers/50ae5dd288e6954cf5447a45cb4f5d06.jpg
+  ;;
+  8)
+    feh --bg-fill ~/Pictures/Wallpapers/bf9475542ee8a81e1807ea87d8da63b8.jpg --bg-fill ~/Pictures/Wallpapers/cb7d4a854ac9be55eeb53c3ed9821382.png
+  ;;
+  9)
+    feh --bg-fill ~/Pictures/Wallpapers/cc6c7b0bb133736a717a230044bf054e.jpg --bg-fill ~/Pictures/Wallpapers/95947908_p0.jpg
+  ;;
+  10)
+    feh --bg-fill ~/Pictures/Wallpapers/uhdpaper-com-71f-pc-8k.jpg --bg-fill ~/Pictures/Wallpapers/uhdpaper-com-181f-pc-8k.jpg
+  ;;
+  11)
+    feh --bg-fill ~/Pictures/Wallpapers/320c38f1575a7c9634eb2cf65c3e30ff.jpg --bg-fill ~/Pictures/Wallpapers/b67ac2e9b02c3933fb8feed709d95c5b.jpg
+  ;;
+  12)
+    feh --bg-fill ~/Pictures/Wallpapers/1b05ef969c9c7740bde30543fc594a79.jpg --bg-fill ~/Pictures/Wallpapers/574671d061c6f306f313958995e66fc8.jpg
+  ;;
+  13)
+    feh --bg-fill ~/Pictures/Wallpapers/96366291_p0.png --bg-fill ~/Pictures/Wallpapers/FJx_dc8VkAEG1ok.jpeg
+  ;;
+  14)
+    feh --bg-fill ~/Pictures/Wallpapers/91935793_p0.png --bg-fill ~/Pictures/Wallpapers/71d594bcd0416db9d6de56757b0dacc4.jpg
+  ;;
+  15)
+    feh --bg-fill ~/Pictures/Wallpapers/aslkdfj.jpg --bg-fill ~/Pictures/Wallpapers/78adb18a735d02d23b5036a08ec88897.jpg
+  ;;
+  16)
+    feh --bg-fill ~/Pictures/Wallpapers/95901712_p0.jpg --bg-fill ~/Pictures/Wallpapers/bbf5f457f4a87cc227e322b787d514a6.jpg
+  ;;
+  17)
+    feh --bg-fill ~/Pictures/Wallpapers/98b9472bf990c827a6761ffdb1c7b7ff.jpg --bg-fill ~/Pictures/Wallpapers/61584c1683311985edbed31f5f2df456.jpg
+  ;;
+  18)
+    feh --bg-fill ~/Pictures/Wallpapers/125709c77f6b76641dc29af54a585ec7.jpg --bg-fill ~/Pictures/Wallpapers/90373776_p0.jpg
+  ;;
+  19)
+    feh --bg-fill ~/Pictures/Wallpapers/93567424_p1.jpg --bg-fill ~/Pictures/Wallpapers/95947908_p0.jpg
+
+  ;;
+  20)
+    feh --bg-fill ~/Pictures/Wallpapers/95805022_p0.jpg --bg-fill ~/Pictures/Wallpapers/96684915_p0.jpg
+  ;;
+  21)
+    feh --bg-fill ~/Pictures/Wallpapers/96647527_p0.png --bg-fill ~/Pictures/Wallpapers/96362002_p0.jpg
+  ;;
+  22)
+    feh --bg-fill ~/Pictures/Wallpapers/a122cc98cc6ef8f39f7cca2a063fe547.png --bg-fill ~/Pictures/Wallpapers/cbe41fb5aef374abf1af90e3e7f3b3d1.jpg
+  ;;
+  23)
+    feh --bg-fill ~/Pictures/Wallpapers/d145202fb62de3e44199d9fa2fca8210.jpg --bg-fill ~/Pictures/Wallpapers/97062855_p0.jpg
+  ;;
+  24)
+    feh --bg-fill ~/Pictures/Wallpapers/96593728_p0.png --bg-fill ~/Pictures/Wallpapers/96901584_p0.jpg
+  ;;
+  25)
+    feh --bg-fill ~/Pictures/Wallpapers/96852873_p0.png --bg-fill ~/Pictures/Wallpapers/4b6c0e9ad43bc2d488e0e61856b7c33d.jpg
+  ;;
+  26)
+    feh --bg-fill ~/Pictures/Wallpapers/ab216baaf0db4c1068e3418f4d53c423.png --bg-fill ~/Pictures/Wallpapers/ad6da6bce2693490d1852a55d7d82104.jpg 
+  ;;
+  27)
+    feh --bg-fill ~/Pictures/Wallpapers/ad6da6bce2693490d1852a55d7d82104.jpg --bg-fill ~/Pictures/Wallpapers/bbf5f457f4a87cc227e322b787d514a6.jpg
+  ;;
+  28)
+    feh --bg-fill ~/Pictures/Wallpapers/69002575_p0.png --bg-fill ~/Pictures/Wallpapers/c36269a14fbba7d8d05430df2702c0a9.png
+  ;;
+  29)
+    feh --bg-fill ~/Pictures/Wallpapers/79428110a95b7e302be48044f89b326a.png --bg-fill ~/Pictures/Wallpapers/bbf5f457f4a87cc227e322b787d514a6.jpg
+  ;;
+  30)
+    feh --bg-fill ~/Pictures/Wallpapers/87525650_p0.jpg --bg-fill ~/Pictures/Wallpapers/93920392_p0.jpg
+  ;;
+  31)
+    feh --bg-fill ~/Pictures/Wallpapers/93920392_p0.jpg --bg-fill ~/Pictures/Wallpapers/87525650_p0.jpg
+  ;;
+  32) 
+    feh --bg-fill ~/Pictures/Wallpapers/92742004_p0.jpg --bg-fill ~/Pictures/Wallpapers/96746337_p0.jpg
+  ;;
+  33)
+    feh --bg-fill ~/Pictures/Wallpapers/ea42886f4b5657c893f50607c92ce560.jpg --bg-fill ~/Pictures/Wallpapers/be4379b6529581fc8c5a3b3eeff2aed3.jpg
+  ;;
+  34)
+    feh --bg-fill ~/Pictures/Wallpapers/4bffdd0385225c9834be41347144c8e6.jpg --bg-fill ~/Pictures/Wallpapers/deb714b488b633c8fb94ef40fa3ecd05.jpg
+  ;;
+  35)
+    feh --bg-fill ~/Pictures/Wallpapers/abce08086357d8cf9496a65473af9ecf.png --bg-fill ~/Pictures/Wallpapers/94162076_p0.png
+  ;;
+  36)
+    feh --bg-fill ~/Pictures/Wallpapers/96248251_p0.png --bg-fill ~/Pictures/Wallpapers/94655299_p0.jpg
+  ;;
+  37)
+    feh --bg-fill ~/Pictures/Wallpapers/280a36017c87427f3a816ed2221bbfda.jpg --bg-fill ~/Pictures/Wallpapers/312c7248590e88c6b47d6b1b2780a6d3.png
+  ;;
+  38) feh --bg-fill ~/Pictures/Wallpapers/33ecced518d9ada7f783d76be8459aa2.jpg --bg-fill ~/Pictures/Wallpapers/f3e8dd644fcae0abf6c03773f3908691.jpg
+  ;;
+  39) feh --bg-fill ~/Pictures/Wallpapers/3ad143592d9eab24942b742935451a64.jpg --bg-fill ~/Pictures/Wallpapers/82545161_p0.jpg
+  ;;
+  40) feh --bg-fill ~/Pictures/Wallpapers/9c37d1dab1aa68d2eccd201737cd32ec.jpg --bg-fill ~/Pictures/Wallpapers/96848601_p0.jpg
+  ;;
+  41) feh --bg-fill ~/Pictures/Wallpapers/uhdpaper.com-download-4K-441-@1451942229057291563.jpg --bg-fill ~/Pictures/Wallpapers/1190376.jpg
+  ;;
+esac

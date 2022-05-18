@@ -210,16 +210,15 @@ let g:coc_explorer_global_presets = {
 \   },
 \ }
 
-nmap <space>e :CocCommand explorer<CR>
-nmap <space>f :CocCommand explorer --preset floating<CR>
+nmap <silent><space>e :CocCommand explorer --quit-on-open<CR>
+nmap <silent><space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
 
-" Use preset argument to open it
-"nnoremap <space>ed :CocCommand explorer --preset .vim<CR>
-"nnoremap <space>ef :CocCommand explorer --preset floating<CR>
-"nnoremap <space>ec :CocCommand explorer --preset cocConfig<CR>
-"nnoremap <space>eb :CocCommand explorer --preset buffer<CR>
+" coc extensions
+" coc-git -> see lines added or deleted and not commited on git
+" coc-emmet -> for html css jsx
+" coc-jedi -> language server for python
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-emmet', 'coc-prettier', 'coc-sh', 'coc-eslint', 'coc-pairs', 'coc-git', 'coc-jedi', 'coc-json', 'coc-html', 'coc-explorer', 'coc-prettier']
 
-"" List all presets
-"nnoremap <space>el :CocList explPresets
+let g:coc_filetype_map = {'js': 'javascript.jsx'}

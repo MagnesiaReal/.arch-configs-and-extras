@@ -20,7 +20,7 @@ launch_bar() {
   		#	polybar --reload example &
 		#fi
 		MONITOR="DVI-D-0" polybar -q main -c "$dir/$style/config.ini" &
-		MONITOR="VGA-0" polybar -q main2 -c "$dir/$style/config.ini" &
+		#MONITOR="VGA-0" polybar -q main2 -c "$dir/$style/config.ini" &
 
 	elif [[ "$style" == "hack" || "$style" == "cuts" ]]; then
 		polybar -q top -c "$dir/$style/config.ini" &
