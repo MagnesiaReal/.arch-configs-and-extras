@@ -18,6 +18,7 @@ Plug 'terryma/vim-multiple-cursors' " Plug for Multiople cursors
 
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'seblj/nvim-tabline'
+Plug 'ahonn/resize.vim'
 
 
 
@@ -53,3 +54,4 @@ source ~/.config/nvim/treesitter-config.vim
 source ~/.config/nvim/vim-multiple-cursors-config.vim
 source ~/.config/nvim/staline.vim
 source ~/.config/nvim/tabline.vim
+source ~/.config/nvim/resize.vim

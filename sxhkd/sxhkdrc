@@ -1,0 +1,258 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+  ~/.config/i3/scripts/shelldir.sh
+
+# program launcher
+#super + @space
+	#dmenu_run
+
+
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+#super + alt + {q,r}
+	#bspc {quit,wm -r}
+super + shift + r
+  bspc wm -r
+ 
+
+## default kill windows and systemj ###########
+#super + q
+  #.config/polybar/magneciareal/scripts/powermenu.sh
+
+## close and kill
+super + shift + w
+	bspc node -k
+###############################################
+super + q
+  .config/polybar/magneciareal/scripts/powermenu.sh
+super + shift + q
+  bspc node -c
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous window in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + {_,shift + }KP_End
+  bspc {desktop -f,node -d} 1
+super + {_,shift + }KP_Down
+  bspc {desktop -f,node -d} 2
+super + {_,shift + }KP_Next
+  bspc {desktop -f,node -d} 3
+super + {_,shift + }KP_Left
+  bspc {desktop -f,node -d} 4
+super + {_,shift + }KP_Begin
+  bspc {desktop -f,node -d} 5
+super + {_,shift + }KP_Right
+  bspc {desktop -f,node -d} 6
+super + {_,shift + }KP_Home
+  bspc {desktop -f,node -d} 7
+super + {_,shift + }KP_Up
+  bspc {desktop -f,node -d} 8
+super + {_,shift + }KP_Prior
+  bspc {desktop -f,node -d} 9
+super + {_,shift + }KP_Insert
+  bspc {desktop -f,node -d} 10
+super + {_,shift + }KP_Delete
+  bspc {desktop -f,node -d} 11
+super + {_,shift + }KP_Enter
+  bspc {desktop -f,node -d} 12
+super + {_,shift + }KP_Add
+  bspc {desktop -f,node -d} 13
+super + {_,shift + }KP_Subtract
+  bspc {desktop -f,node -d} 14
+super + {_,shift + }KP_Multiply
+  bspc {desktop -f,node -d} 15
+
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expandra window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+#####################################################
+### ### ### CUSTOM MAGNECIAREAL SHORTCUTS ### ### ###
+#####################################################
+
+# All aplications
+super + d
+  ~/.config/polybar/magneciareal/scripts/launcher.sh
+
+# All opened windows
+super + shift + Tab
+  ~/.config/polybar/magneciareal/scripts/windows.sh
+
+#############################
+### ### MPD ShortCuts ### ###
+#############################
+# Power on/off mpd
+super + ctrl + d
+  ~/.config/i3/scripts/togglempd
+# All songs (first power on mpd)
+super + ctrl + o
+  ~/.config/polybar/magneciareal/scripts/mpdclient.sh -s
+
+XF86AudioPlay
+  mpc toggle
+XF86AudioStop
+  mpc stop
+XF86AudioNext
+  mpc next
+XF86AudioPrev
+  mpc prev
+
+#############################
+###### Toggle scripts #######
+#############################
+# Toggle picom
+super + ctrl + p
+  ~/.config/i3/scripts/togglepicom
+# Toggle keyboard layout
+super + ctrl + semicolon
+  ~/.config/i3/scripts/togglexkbmap
+
+# Change background image random
+super + ctrl + shift + b
+  feh --randomize --bg-fill ~/Pictures/Wallpapers/*
+# Select background image
+super + ctrl + b
+  ~/.config/i3/scripts/rofi_image.sh
+
+
+
+#############################
+##### PrintScreen Modes #####
+#############################
+
+# Print Full screen and Save
+Print
+  maim "/home/$USER/Pictures/Screenshots/$(date +'%Y-%m-%d-%H:%M:%S').png"
+# Print Full screen and Copy to clipboard
+ctrl + Print
+  maim | xclip -selection clipboard -t image/png
+
+# Print current window and Save
+super + Print
+  maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date +'%Y-%m-%d-%H:%M:%S').png"
+# Print current window and Copy to clipboard
+super + ctrl + Print
+  maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+
+# Print selected Area and Save
+shift + Print
+  maim --select "/home/$USER/Pictures/Screenshots/$(date +'%Y-%m-%d-%H:%M:%S').png"
+#Print selected Area and copy to clipboard
+ctrl + shift + Print
+  maim --select | xclip -selection clipboard -t image/png
+
+
+
+#############################
+########### VOLUME ##########
+#############################
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5% &
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5% &
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle &
+XF86AudioMicMute
+  pactl set-source-mute @DEFAULT_SOURCE@ toggle
