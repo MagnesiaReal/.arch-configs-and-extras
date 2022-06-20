@@ -4,24 +4,27 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
-bspc config border_width         1
+bspc config border_width         2
 bspc config window_gap          10
-bspc config focused_border_color "#ffd12f"
 
-bspc config split_ratio          0.50
+bspc config focused_border_color "#FFDFA1"
+
+
+bspc config split_ratio          0.51
 bspc config borderless_monocle   false
 bspc config gapless_monocle      false
 
-bspc rule -a Google-chrome desktop='^3' follow=on
-bspc rule -a mailspring desktop='^9'
-bspc rule -a Thunar desktop='^6'
-bspc rule -a kittyranger desktop='^6'
-bspc rule -a jetbrains-idea-ce desktop='^4'
 
+bspc rule -a kittyupdater:kittyupdater desktop='^10' follow=on
+bspc rule -a Google-chrome desktop='^3'
+bspc rule -a mailspring desktop='^9' follow=on
+bspc rule -a Thunar desktop='^6' follow=on
+bspc rule -a kittyranger desktop='^6' follow=on
+bspc rule -a jetbrains-idea-ce desktop='^4'
 bspc rule -a leagueclient.exe desktop='^1'
 bspc rule -a leagueclientux.exe desktop='^1'
+bspc rule -a Qalculate-gtk:qalculate-gtk state=floating
 
-bspc rule -a kittyupdater dekstop='^10' follow=on
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
 #bspc rule -a mplayer2 state=floating
@@ -36,9 +39,9 @@ picom -bf
 
 xss-lock --transfer-sleep-lock -- i3lock-fancy-dualmonitor &
 
-glava -d &
+pgrep -x "glava" > /dev/null || glava -d &
 # sleep 1 && ~/.config/i3/scripts/dinamic_wallpaper.sh ~/Videos/wallpapers/LiveWallpaperPC.com-Girl-Pipe.mp4 &
-# sleep 1 && ~/.config/i3/scripts/dinamic_wallpaper.sh ~/Videos/wallpapers/Project-Renekton.mp4 &
+sleep 1 && ~/.config/i3/scripts/dinamic_wallpaper.sh ~/Videos/wallpapers/Project-Renekton.mp4 &
 ~/.config/polybar/launch.sh --magneciareal &
 ~/.config/magne-scripts/wacom_config.sh DVI-D-0
 

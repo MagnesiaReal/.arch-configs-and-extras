@@ -57,8 +57,12 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+super + f
+  bspc node -t \~fullscreen
+
+super + {t,shift + t,s}
+	bspc node -t {tiled,pseudo_tiled,floating}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -256,3 +260,9 @@ XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle &
 XF86AudioMicMute
   pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+
+super + shift + bracket{left,right}
+	{ bspc config -d focused window_gap $(( $(bspc config -d focused window_gap) + 10 )), \
+    [ $(bspc config -d focused window_gap) -ge 10 ] && \
+    bspc config -d focused window_gap $(( $(bspc config -d focused window_gap) - 10 )) }

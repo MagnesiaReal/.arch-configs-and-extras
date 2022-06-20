@@ -15,11 +15,12 @@ Plug 'OmniSharp/omnisharp-vim' " Plug for .NET C#
 Plug 'puremourning/vimspector' " Plug for Debugging program
 Plug 'tpope/vim-dadbod' " Plug install for SQl need coc-db
 Plug 'terryma/vim-multiple-cursors' " Plug for Multiople cursors
-
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'seblj/nvim-tabline'
 Plug 'ahonn/resize.vim'
-
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'petertriho/nvim-scrollbar'
+Plug 'kevinhwang91/nvim-hlslens'
 
 
 " Default plugs 
@@ -55,3 +56,6 @@ source ~/.config/nvim/vim-multiple-cursors-config.vim
 source ~/.config/nvim/staline.vim
 source ~/.config/nvim/tabline.vim
 source ~/.config/nvim/resize.vim
+source ~/.config/nvim/indent-blankline.vim
+source ~/.config/nvim/scrollbar.vim
+source ~/.config/nvim/nvim-hlslens.vim
