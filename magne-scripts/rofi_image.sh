@@ -7,5 +7,6 @@ mb() {
 image=$(mb | awk '{print $2}');
 cod=$?
 [ ! "$image" ] && exit
+pkill xwinwrap
 image=~/Pictures/Wallpapers/$image
 feh --bg-fill $image

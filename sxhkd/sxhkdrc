@@ -1,24 +1,10 @@
-#
-# wm independent hotkeys
-#
-
 # terminal emulator
 super + Return
-  ~/.config/i3/scripts/shelldir.sh
-
-# program launcher
-#super + @space
-	#dmenu_run
-
-
+  ~/.config/magne-scripts/shelldir.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-
-#
-# bspwm hotkeys
-#
 
 # quit/restart bspwm
 #super + alt + {q,r}
@@ -27,18 +13,15 @@ super + shift + r
   bspc wm -r
  
 
-## default kill windows and systemj ###########
-#super + q
-  #.config/polybar/magneciareal/scripts/powermenu.sh
-
-## close and kill
+## kill program
 super + shift + w
 	bspc node -k
-###############################################
-super + q
-  .config/polybar/magneciareal/scripts/powermenu.sh
+## close window
 super + shift + q
   bspc node -c
+## powermenu
+super + q
+  .config/polybar/magneciareal/scripts/powermenu.sh
 
 # alternate between the tiled and monocle layout
 super + m
@@ -52,25 +35,19 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-#
-# state/flags
-#
-
-# set the window state
 
 super + f
   bspc node -t \~fullscreen
 
-super + {t,shift + t,s}
-	bspc node -t {tiled,pseudo_tiled,floating}
+super + {t,shift + t}
+	bspc node -t \~{tiled,pseudo_tiled}
+
+super + shift + space
+  bspc node -t \~floating
 
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
-
-#
-# focus/swap
-#
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -188,7 +165,7 @@ super + shift + Tab
 #############################
 # Power on/off mpd
 super + ctrl + d
-  ~/.config/i3/scripts/togglempd
+  ~/.config/magne-scripts/togglempd
 # All songs (first power on mpd)
 super + ctrl + o
   ~/.config/polybar/magneciareal/scripts/mpdclient.sh -s
@@ -207,17 +184,19 @@ XF86AudioPrev
 #############################
 # Toggle picom
 super + ctrl + p
-  ~/.config/i3/scripts/togglepicom
+  ~/.config/magne-scripts/togglepicom
 # Toggle keyboard layout
 super + ctrl + semicolon
-  ~/.config/i3/scripts/togglexkbmap
+  ~/.config/magne-scripts/togglexkbmap
 
 # Change background image random
 super + ctrl + shift + b
   feh --randomize --bg-fill ~/Pictures/Wallpapers/*
 # Select background image
 super + ctrl + b
-  ~/.config/i3/scripts/rofi_image.sh
+  ~/.config/magne-scripts/rofi_image.sh
+super + shift + b
+  ~/.config/magne-scripts/rofi_live_wallpaper.sh
 
 
 

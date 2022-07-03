@@ -1,17 +1,12 @@
 #!/bin/sh
 
-TOGGLE=$HOME/.config/i3/.toggle
 NOTIFY_ICONE=$HOME/.icons/Fancy-Dark-Icons/apps/48/xterm.svg
 NOTIFY_ICONO=$HOME/.icons/Fancy-Dark-Icons/apps/48/diaspora.svg
 
-
-if [ ! -e $TOGGLE ]; then
-    notify-send -i $NOTIFY_ICONE PICOM "Compositor killed succesfully"
-    touch $TOGGLE
-    pkill picom
+if pgrep -x "picom"; then
+  notify-send -i $NOTIFY_ICONE PICOM "Compositor killed succesfully"
+  pkill picom
 else
-    rm $TOGGLE
-    # picom -bf --experimental-backends
-    picom -bf
-    notify-send -i $NOTIFY_ICONO PICOM "Compositor already up"
+  picom -bf
+  notify-send -i $NOTIFY_ICONO PICOM "Compositor already up" 
 fi

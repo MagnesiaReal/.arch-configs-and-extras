@@ -1,5 +1,4 @@
 #!/bin/sh
-
 TOGGLE=$HOME/.config/i3/.togglexkbmap
 
 if [ ! -e $TOGGLE ]; then

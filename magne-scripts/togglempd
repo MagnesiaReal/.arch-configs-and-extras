@@ -1,26 +1,10 @@
 #!/bin/sh
-
-TOGGLE=$HOME/.config/i3/.togglempd
 NOTIFY_ICON=~/.icons/Fancy-Dark-Icons/apps/48/cantata.svg
-#res=""
-#resu=""
-if [ ! -e $TOGGLE ]; then
-    touch $TOGGLE
-    mpd
-    notify-send -u low -i $NOTIFY_ICON MPD "mpd already on"
 
-    #i3-msg 'workspace 7, move workspace to output VGA-0'
-    #sleep 1
-    
-    #res=`wmctrl -lx | awk '{if ($3 == "kittycava.kittycava") print "OK"}'`
-    #[[ ! $res == "OK" ]] && kitty --class kittycava cava &
-
-    #resu=`wmctrl -lx | awk '{if ($3 == "kittyclock.kittyclock") print "OK"}'`
-    #[[ ! $resu == "OK" ]] && kitty --class kittyclock tty-clock -c -C 3 -r &
-    
-
+if pgrep -x "mpd" > /dev/null; then
+  mpd --kill
+  notify-send -u low -i $NOTIFY_ICON MPD "mpd killed succesfully"
 else
-    rm $TOGGLE
-    mpd --kill
-    notify-send -u low -i $NOTIFY_ICON MPD "mpd killed succesfully"
+  mpd
+  notify-send -u low -i $NOTIFY_ICON MPD "mpd already on"
 fi
